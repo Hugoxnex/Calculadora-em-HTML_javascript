@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+<style type="text/css" media="all">
+    div{
+        
+        text-align: center;
+    }
+    
+    body{
+        background-color: green;
+    }
+    h2{
+        text-align: center;
+    }
+  
+</style>
+
+<body>
+
+<h2>JavaScript - Calculadora</h2>
+
+<hr>
+<div>
+<p>VALOR:
+
+<input id="n1" value="10" />
+
+<p>VALOR:
+
+<input id="n2" value="5" />
+
+<br> </br>
+
+    
+
+    <button onclick="document.getElementById('ex13').innerHTML = calcula('+')">+</button>
+
+    <button onclick="document.getElementById('ex13').innerHTML = calcula('-')">-</button>
+
+    <button onclick="document.getElementById('ex13').innerHTML = calcula('*')">*</button>
+
+    <button onclick="document.getElementById('ex13').innerHTML = calcula('/')">/</button>
+
+
+<p>RESULT:
+
+<input id="ex13" value="0" />
+</div>
+<script>
+
+function calcula(op) {
+
+  n1 = document.getElementById("n1").value;
+
+  n2 = document.getElementById("n2").value;
+
+  if (op == "+"){
+
+      document.getElementById('ex13').value = parseInt(n1) + parseInt(n2);
+
+  } else if (op == "-"){
+
+      document.getElementById('ex13').value = parseInt(n1) - parseInt(n2);
+
+  } else if (op == "*"){
+
+      document.getElementById('ex13').value = parseInt(n1) * parseInt(n2);
+
+  } else if (op == "/"){
+
+      document.getElementById('ex13').value = parseInt(n1) / parseInt(n2);
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>
+
+ 
